@@ -16,5 +16,5 @@ export class ProductImageDto extends ImageDto {
 
 @ObjectType()
 export class ProductImageResponse extends PaginatedResponse(ProductImageDto) {
-  something: number; // <--- if I removed this, it will throw errors
+  // something: number; // <--- if I uncomment, it works fine
 }
