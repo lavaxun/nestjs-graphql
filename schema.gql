@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ProductImage {
+  altText: String!
+  id: String!
+  src: String!
+  position: Float!
+}
+
+type ProductImageResponse {
+  items: [ProductImage!]!
+  total: Float!
+  hasMore: Boolean!
+  something: Float!
+}
+
+type Query {
+  image: ProductImage!
+  imageResponse: ProductImageResponse!
+}
